@@ -4,7 +4,7 @@ import { RatePlans } from '../type/rateplans';
 import { Room } from '../type/room';
 // ✅ Adjust the path to match your model
 
-const BASE_URL = 'http://localhost:8081/api/rateplans';
+const BASE_URL = 'http://localhost:8080/api/rateplans';
 
 /**
  * Fetch all rate plans by room ID

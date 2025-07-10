@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:8081/api', // 👈 no need to repeat in each call
+  baseURL: 'http://localhost:8080/api', // 👈 no need to repeat in each call
   headers: {
     'Content-Type': 'application/json',
   },

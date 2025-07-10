@@ -1,8 +1,9 @@
 // src/hooks/useHotels.ts
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { Hotel } from '../type/Hotel';
+import { deleteHotel, fetchAllHotels, updateHotel } from '../api/hotel';
+import { saveHotel } from '../service/hotel.service';
 
-import { updateHotel, deleteHotel, fetchAllHotels, saveHotel } from '../api/hotel';
 
 
 // React Query for fetching

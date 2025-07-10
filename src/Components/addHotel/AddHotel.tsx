@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 
 import { useNavigate } from "react-router-dom";
-import "./addHotel.css";
-import { useSaveHotel } from "../../hooks/useHotels";
+import "./AddHotel.css";
+
 import { Hotel } from "../../type/Hotel";
+import { useSaveHotel } from "../../hooks/useHotels";
 
 const AddHotel: React.FC = () => {
   const [hotel, setHotel] = useState<Hotel>({
@@ -38,7 +39,7 @@ const AddHotel: React.FC = () => {
         alert("✅ Hotel saved successfully!");
         setHotel({ hotelId: 0, hotelName: "", hotelAddress: "" });
       },
-      onError: (error) => {
+      onError: (error: any) => {
         console.error("❌ Error saving hotel:", error);
         alert("❌ Failed to save hotel.");
       },
